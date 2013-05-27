@@ -8,6 +8,7 @@
         "url": "git://github.com/Berico-Technologies/deployd-modules.git"
     },
     "dependencies": {
+        "coffee-script": "~1.6.2",
         "deployd": "~0.6.10"
     },
     "author": "Richard Clayton",
