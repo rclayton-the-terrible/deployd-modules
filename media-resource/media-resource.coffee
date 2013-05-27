@@ -8,9 +8,6 @@ class MediaResource extends Resource
   @events: [ "get", "post", "delete", "put" ]
   clientGeneration: true
 
-  constructor: ->
-    super.apply @, arguments
-
   handle: (ctx, next) =>
 
     parts = ctx.url.split("/").filter (p) -> p
