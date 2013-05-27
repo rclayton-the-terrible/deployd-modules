@@ -23,11 +23,14 @@ class MediaResource extends Resource
       setResult: (val) -> result = val
 
     if ctx.method is "POST" and @events.post
+      console.log ctx
       @events.post.run ctx, domain, (err) =>
         ctx.done err, result
+
     else if ctx.method is "GET" and @events.get
       @events.get.run ctx, domain, (err) =>
         ctx.done err, result
+
     else
       next()
 
