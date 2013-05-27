@@ -1,0 +1,15 @@
+{
+    "name": "dpd-media",
+    "version": "0.0.1",
+    "description": "Deployd module to handle media uploads.",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/Berico-Technologies/deployd-modules.git"
+    },
+    "dependencies": {
+        "deployd": "~0.6.10"
+    },
+    "author": "Richard Clayton",
+    "license": "Apache 2.0"
+}
