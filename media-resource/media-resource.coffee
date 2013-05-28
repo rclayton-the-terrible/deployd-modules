@@ -14,7 +14,7 @@ class MediaResource extends Resource
 
   @basicDashboard:
     settings: [
-      name: "baseDirectory"
+      name: "Save Directory"
       type: "string"
     ]
 
@@ -22,8 +22,7 @@ class MediaResource extends Resource
 
   constructor: (name, options) ->
     super(name, options)
-    @basedir = @config.baseDirectory ? "/opt/web/data/media-resource"
-    @fileStore = new FSStore({ basedir: @basedir })
+    @fileStore = new FSStore({ basedir: @config["Save Directory"] })
 
   handle: (ctx, next) =>
 
@@ -65,10 +64,10 @@ class MediaResource extends Resource
               return uploadedFile(err)
             else
               #@fileStore.write uuid.v4(),
-              console.log file
+              console.log file.filename
               uploadedFile()
         else
-          console.log file
+          console.log file.filename
           uploadedFile()
 
       handleError = (err) =>

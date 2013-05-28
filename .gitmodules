@@ -1,0 +1,12 @@
+[submodule "dpd-event"]
+	path = dpd-event
+	url = git://github.com/deployd/dpd-event.git
+[submodule "dpd-email"]
+	path = dpd-email
+	url = git://github.com/deployd/dpd-email.git
+[submodule "dpd-importer"]
+	path = dpd-importer
+	url = git://github.com/deployd/dpd-importer.git
+[submodule "dpd-s3"]
+	path = dpd-s3
+	url = git://github.com/deployd/dpd-s3.git
